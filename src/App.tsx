@@ -1,7 +1,12 @@
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import PostListPage from './pages/PostListPage';
 
-function App() {
-  return <div className="text-7xl">Hello World</div>;
-}
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<PostListPage />} />
+    </Routes>
+  );
+};
 
 export default App;
