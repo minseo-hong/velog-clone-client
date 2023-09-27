@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { BsFillSunFill } from 'react-icons/bs';
 import { GoSearch } from 'react-icons/go';
 
@@ -7,13 +9,13 @@ const Navbar = () => {
       <div className="px-8 mx-auto max-w-6xl">
         <div className="h-16 flex items-center justify-between">
           <div className="flex flex-shrink-0 items-center">
-            <a href="#">
+            <Link to="#">
               <img
                 className="object-cover h-6"
                 src="/images/logo/logo.svg"
                 alt="velog"
               />
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-6">
             <button className="text-2xl">
